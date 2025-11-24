@@ -1,10 +1,12 @@
 using Bexter.Avalans.Core;
 using Bexter.Avalans.Locations.Api.Endpoints;
+using Bexter.Avalans.Locations.Data.TableStorage;
 using Bexter.Avalans.Locations.Dtos;
 using Bexter.Avalans.Locations.Features.CreateLocation;
 using Bexter.Avalans.Locations.Features.GetAllLocations;
 using Bexter.Avalans.Locations.Features.GetLocationById;
 using Bexter.Avalans.Locations.Features.UpdateLocation;
+using Bexter.Avalans.Locations.Repositories;
 using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,6 +16,12 @@ builder.AddServiceDefaults();
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+
+// Register Azure Table Storage client using Aspire integration
+builder.AddAzureTableClient("tables");
+
+// Register repository
+builder.Services.AddSingleton<ILocationRepository, TableStorageLocationRepository>();
 
 // Register query handlers
 builder.Services.AddTransient<IQueryHandler<GetAllLocationsQuery, IEnumerable<LocationDto>>, GetAllLocationsQueryHandler>();

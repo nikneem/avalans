@@ -1,6 +1,75 @@
 @Bexter.Avalans.Locations.Api_HostAddress = http://localhost:5034
 
-GET {{Bexter.Avalans.Locations.Api_HostAddress}}/weatherforecast/
+### Get all locations (active only)
+GET {{Bexter.Avalans.Locations.Api_HostAddress}}/locations
 Accept: application/json
+
+###
+
+### Get all locations (including inactive)
+GET {{Bexter.Avalans.Locations.Api_HostAddress}}/locations?IncludeInactive=true
+Accept: application/json
+
+###
+
+### Get location by ID
+@locationId = 00000000-0000-0000-0000-000000000000
+GET {{Bexter.Avalans.Locations.Api_HostAddress}}/locations/{{locationId}}
+Accept: application/json
+
+###
+
+### Create new location
+POST {{Bexter.Avalans.Locations.Api_HostAddress}}/locations
+Content-Type: application/json
+
+{
+  "name": "Main Warehouse",
+  "number": "WH001",
+  "street": "123 Industrial Park Rd",
+  "city": "Springfield",
+  "postalCode": "12345",
+  "country": "USA",
+  "state": "IL",
+  "contactName": "John Warehouse",
+  "contactEmail": "john@warehouse.com",
+  "contactPhone": "+1-555-0100"
+}
+
+###
+
+### Create location without contact info
+POST {{Bexter.Avalans.Locations.Api_HostAddress}}/locations
+Content-Type: application/json
+
+{
+  "name": "Distribution Center East",
+  "number": "DC-EAST",
+  "street": "456 Logistics Blvd",
+  "city": "Boston",
+  "postalCode": "02101",
+  "country": "USA",
+  "state": "MA"
+}
+
+###
+
+### Update location
+@updateLocationId = 00000000-0000-0000-0000-000000000000
+PUT {{Bexter.Avalans.Locations.Api_HostAddress}}/locations/{{updateLocationId}}
+Content-Type: application/json
+
+{
+  "name": "Main Warehouse - Updated",
+  "number": "WH001",
+  "street": "123 Industrial Park Rd Suite 200",
+  "city": "Springfield",
+  "postalCode": "12345",
+  "country": "USA",
+  "state": "IL",
+  "contactName": "Jane Warehouse",
+  "contactEmail": "jane@warehouse.com",
+  "contactPhone": "+1-555-0101"
+}
 
 ###

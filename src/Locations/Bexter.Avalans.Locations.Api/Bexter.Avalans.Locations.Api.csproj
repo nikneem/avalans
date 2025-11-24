@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Aspire.Azure.Data.Tables" Version="13.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.0" />
     <PackageReference Include="Scalar.AspNetCore" Version="2.11.0" />
   </ItemGroup>
@@ -15,6 +16,7 @@
     <ProjectReference Include="..\..\Aspire\Bexter.Avalans.Aspire\Bexter.Avalans.Aspire.ServiceDefaults\Bexter.Avalans.Aspire.ServiceDefaults.csproj" />
     <ProjectReference Include="..\..\Shared\Bexter.Avalans.Core\Bexter.Avalans.Core.csproj" />
     <ProjectReference Include="..\Bexter.Avalans.Locations\Bexter.Avalans.Locations.csproj" />
+    <ProjectReference Include="..\Bexter.Avalans.Locations.Data.TableStorage\Bexter.Avalans.Locations.Data.TableStorage.csproj" />
   </ItemGroup>
 
 </Project>
