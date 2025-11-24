@@ -17,6 +17,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\..\Items\Bexter.Avalans.Items.Api\Bexter.Avalans.Items.Api.csproj" />
     <ProjectReference Include="..\..\..\Locations\Bexter.Avalans.Locations.Api\Bexter.Avalans.Locations.Api.csproj" />
+    <ProjectReference Include="..\..\..\Transactions\Bexter.Avalans.Transactions.Api\Bexter.Avalans.Transactions.Api.csproj" />
   </ItemGroup>
 
 </Project>

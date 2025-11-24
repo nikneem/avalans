@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 18
-VisualStudioVersion = 18.0.11217.181 d18.0
+VisualStudioVersion = 18.0.11217.181
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aspire", "Aspire", "{81E65695-F31C-4FEA-8023-FDDF993E2FC0}"
 EndProject
@@ -42,6 +42,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bexter.Avalans.Core", "Shared\Bexter.Avalans.Core\Bexter.Avalans.Core.csproj", "{05B862B5-77F3-4B73-9CBE-5F6DC664D58C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bexter.Avalans.Transactions.Data.MongoDb", "Transactions\Bexter.Avalans.Transactions.Data.MongoDb\Bexter.Avalans.Transactions.Data.MongoDb.csproj", "{3344BBE9-E4FA-41EB-B62E-963EFD463EEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bexter.Avalans.Transactions.Api", "Transactions\Bexter.Avalans.Transactions.Api\Bexter.Avalans.Transactions.Api.csproj", "{0E5E7E5A-C0F9-20E0-1198-DB9025A10A16}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -109,6 +111,10 @@ Global
 		{3344BBE9-E4FA-41EB-B62E-963EFD463EEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3344BBE9-E4FA-41EB-B62E-963EFD463EEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3344BBE9-E4FA-41EB-B62E-963EFD463EEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E5E7E5A-C0F9-20E0-1198-DB9025A10A16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E5E7E5A-C0F9-20E0-1198-DB9025A10A16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E5E7E5A-C0F9-20E0-1198-DB9025A10A16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E5E7E5A-C0F9-20E0-1198-DB9025A10A16}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -129,6 +135,7 @@ Global
 		{B8E7ECEB-F626-411A-88D9-6B4159FED4C6} = {B139603D-BEF7-422C-BD52-C8C125D74481}
 		{05B862B5-77F3-4B73-9CBE-5F6DC664D58C} = {1B419771-6ED1-4430-A46E-1213A20E9443}
 		{3344BBE9-E4FA-41EB-B62E-963EFD463EEB} = {B139603D-BEF7-422C-BD52-C8C125D74481}
+		{0E5E7E5A-C0F9-20E0-1198-DB9025A10A16} = {B139603D-BEF7-422C-BD52-C8C125D74481}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0E8B39DF-4768-4F7A-88E5-447EE100829A}
