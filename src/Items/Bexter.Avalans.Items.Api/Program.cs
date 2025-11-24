@@ -4,6 +4,8 @@ using Bexter.Avalans.Items.Api.Endpoints;
 using Bexter.Avalans.Items.Data.TableStorage;
 using Bexter.Avalans.Items.Features.GetAllItems;
 using Bexter.Avalans.Items.Features.GetItemById;
+using GetAllItems = Bexter.Avalans.Items.Features.GetAllItems;
+using GetItemById = Bexter.Avalans.Items.Features.GetItemById;
 using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
