@@ -45,6 +45,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bexter.Avalans.Transactions
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bexter.Avalans.Transactions.Api", "Transactions\Bexter.Avalans.Transactions.Api\Bexter.Avalans.Transactions.Api.csproj", "{0E5E7E5A-C0F9-20E0-1198-DB9025A10A16}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bexter.Avalans.Items.Tests", "Items\Bexter.Avalans.Items.Tests\Bexter.Avalans.Items.Tests.csproj", "{119122CA-652F-4728-A4CF-03C5D4BA351B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -115,6 +117,10 @@ Global
 		{0E5E7E5A-C0F9-20E0-1198-DB9025A10A16}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E5E7E5A-C0F9-20E0-1198-DB9025A10A16}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E5E7E5A-C0F9-20E0-1198-DB9025A10A16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{119122CA-652F-4728-A4CF-03C5D4BA351B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{119122CA-652F-4728-A4CF-03C5D4BA351B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{119122CA-652F-4728-A4CF-03C5D4BA351B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{119122CA-652F-4728-A4CF-03C5D4BA351B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -136,6 +142,7 @@ Global
 		{05B862B5-77F3-4B73-9CBE-5F6DC664D58C} = {1B419771-6ED1-4430-A46E-1213A20E9443}
 		{3344BBE9-E4FA-41EB-B62E-963EFD463EEB} = {B139603D-BEF7-422C-BD52-C8C125D74481}
 		{0E5E7E5A-C0F9-20E0-1198-DB9025A10A16} = {B139603D-BEF7-422C-BD52-C8C125D74481}
+		{119122CA-652F-4728-A4CF-03C5D4BA351B} = {7CBC37DE-2452-45BE-A1C9-DE4C41E6841A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0E8B39DF-4768-4F7A-88E5-447EE100829A}

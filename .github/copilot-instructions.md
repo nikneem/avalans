@@ -8,9 +8,9 @@ Before making any code changes, an AI agent (Copilot) MUST do the following, in 
 2. Present a concise **Planned Tasks** list (step-by-step) describing what edits the agent will perform.
 3. Request explicit permission to proceed. The agent must wait for an affirmative confirmation from a human before applying any changes.
 
-4. Consult the project's design guidelines and ADRs via the Hexmaster MCP server and record a short compliance summary in the Planned Tasks (see below).
+4. Consult the project's design guidelines and ADRs via the `hexmaster-design-guidelines` MCP server and record a short compliance summary in the Planned Tasks (see below).
 
-	- Use the MCP tools `mcp_hexmaster-des_list_docs`, `mcp_hexmaster-des_get_doc`, or `mcp_hexmaster-des_search_docs` to fetch applicable design guidelines, ADRs, and rules before editing.
+	- Use the MCP server `hexmaster-design-guidelines` tools to fetch applicable design guidelines, ADRs, and rules before editing.
 	- Include a one-line **Guideline Compliance** item in the Planned Tasks summarizing any constraints or required patterns (for example: "Guideline Compliance: follow ADR-001 naming and logging conventions; use OpenTelemetry exporters configured by ServiceDefaults").
 	- If no relevant ADRs apply, state that explicitly: "Guideline Compliance: no applicable ADRs found."
 

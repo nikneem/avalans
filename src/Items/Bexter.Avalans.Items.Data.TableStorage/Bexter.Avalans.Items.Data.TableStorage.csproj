@@ -6,4 +6,13 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Azure.Data.Tables" Version="12.11.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Bexter.Avalans.Items.Abstractions\Bexter.Avalans.Items.Abstractions.csproj" />
+    <ProjectReference Include="..\Bexter.Avalans.Items\Bexter.Avalans.Items.csproj" />
+  </ItemGroup>
+
 </Project>
