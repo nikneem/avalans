@@ -1,6 +1,61 @@
 @Bexter.Avalans.Items.Api_HostAddress = http://localhost:5202
 
-GET {{Bexter.Avalans.Items.Api_HostAddress}}/weatherforecast/
+### Get all items
+GET {{Bexter.Avalans.Items.Api_HostAddress}}/items
 Accept: application/json
+
+### Get item by ID
+@itemId = 00000000-0000-0000-0000-000000000000
+GET {{Bexter.Avalans.Items.Api_HostAddress}}/items/{{itemId}}
+Accept: application/json
+
+### Create a new item
+POST {{Bexter.Avalans.Items.Api_HostAddress}}/items
+Content-Type: application/json
+
+{
+  "name": "Laptop Box",
+  "description": "Standard shipping box for laptop computers",
+  "length": 50.0,
+  "width": 40.0,
+  "height": 10.0,
+  "weight": 2.5,
+  "isPerishable": false,
+  "shelfLifeDays": null,
+  "value": 1500.00
+}
+
+### Create a perishable item
+POST {{Bexter.Avalans.Items.Api_HostAddress}}/items
+Content-Type: application/json
+
+{
+  "name": "Fresh Produce Box",
+  "description": "Temperature-controlled box for fresh vegetables",
+  "length": 60.0,
+  "width": 40.0,
+  "height": 30.0,
+  "weight": 15.0,
+  "isPerishable": true,
+  "shelfLifeDays": 7,
+  "value": 50.00
+}
+
+### Update an item
+@updateItemId = 00000000-0000-0000-0000-000000000000
+PUT {{Bexter.Avalans.Items.Api_HostAddress}}/items/{{updateItemId}}
+Content-Type: application/json
+
+{
+  "name": "Updated Laptop Box",
+  "description": "Updated description for shipping box",
+  "length": 55.0,
+  "width": 42.0,
+  "height": 12.0,
+  "weight": 3.0,
+  "isPerishable": false,
+  "shelfLifeDays": null,
+  "value": 1750.00
+}
 
 ###
