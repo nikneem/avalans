@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Bogus" Version="35.6.1" />
+    <PackageReference Include="Bogus" Version="35.6.5" />
     <PackageReference Include="coverlet.collector" Version="6.0.4" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.14.1" />
     <PackageReference Include="Moq" Version="4.20.72" />
@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Bexter.Avalans.Items\Bexter.Avalans.Items.csproj" />
+    <ProjectReference Include="..\Bexter.Avalans.Locations\Bexter.Avalans.Locations.csproj" />
   </ItemGroup>
 
 </Project>

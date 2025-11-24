@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Shared\Bexter.Avalans.Core\Bexter.Avalans.Core.csproj" />
+    <ProjectReference Include="..\Bexter.Avalans.Locations.Abstractions\Bexter.Avalans.Locations.Abstractions.csproj" />
+  </ItemGroup>
+
 </Project>

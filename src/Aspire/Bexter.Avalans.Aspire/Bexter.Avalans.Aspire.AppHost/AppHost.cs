@@ -2,7 +2,10 @@ var builder = DistributedApplication.CreateBuilder(args);
 
 // Add Azure Storage with Table Storage for Items
 var storage = builder.AddAzureStorage("storage")
-    .RunAsEmulator();
+    .RunAsEmulator(azurite =>
+    {
+        azurite.WithLifetime(ContainerLifetime.Persistent);
+});
 
 var tables = storage.AddTables("tables");
 
